@@ -1,7 +1,7 @@
 .Loader,
 .Loader:before,
 .Loader:after {
-  background: #ffffff;
+  background: black;
   -webkit-animation: load1 1s infinite ease-in-out;
   animation: load1 1s infinite ease-in-out;
   width: 1em;
@@ -23,7 +23,7 @@
 .Loader:after {
   position: absolute;
   top: 0;
-  content: '';
+  content: "";
 }
 .Loader:before {
   left: -1.5em;
