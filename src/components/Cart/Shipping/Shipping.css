@@ -1,0 +1,187 @@
+:root {
+  --grey: lightgrey;
+  --yellow: yellow;
+  --maroon: maroon;
+  --white: white;
+  --green: green;
+  --lightGreen: lightgreen;
+}
+
+.ship {
+  padding: 30px 50px;
+  justify-content: space-between;
+  height: fit-content;
+  width: 100%;
+}
+
+.ship h3 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.shipProduct {
+  padding: 20px 5px;
+  border-top: 1px solid var(--grey);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipSubtotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.shipSummary {
+  height: 100%;
+}
+
+.shipProductImg,
+.shipProductInfo,
+.shipProductQuantity {
+  width: 100%;
+}
+
+.shipProductInfo > p:first-child {
+  font-weight: 700;
+  font-size: large;
+}
+
+.shipProductInfo > p:last-child {
+  font-weight: 500;
+  font-size: medium;
+}
+
+.shipProductInfo > p:nth-child(2) {
+  font-weight: 200;
+}
+
+.shipProductImg > img {
+  width: 50%;
+  object-fit: contain;
+}
+
+.shipBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey);
+  padding-top: 15px;
+}
+
+.shipBtnNext {
+  background-color: var(--yellow) !important;
+  padding: 5px 80px !important;
+  border-radius: 5px;
+}
+
+.shipBtnBack {
+  background-color: var(--maroon) !important;
+  color: var(--white) !important;
+  padding: 5px 80px !important;
+  border-radius: 5px;
+}
+
+.shipCoupon {
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  padding: 10px 0 10px 0;
+}
+
+.shipCoupon input {
+  width: 100%;
+  text-transform: uppercase;
+  border: none;
+  outline: none;
+}
+
+.shipTotal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey);
+  border-bottom: 1px solid var(--grey);
+  padding: 10px 0 10px 0;
+}
+
+.shipSubtotal p {
+  text-transform: uppercase;
+}
+
+.shipTotal span {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: large;
+}
+
+.shipSelect {
+  padding: 2px 30px;
+}
+
+.shipForm {
+  border-top: 1px solid var(--grey);
+}
+
+.shipRadioDiv {
+  border-top: 1px solid var(--grey);
+  padding-top: 15px;
+  width: 100%;
+}
+
+.shipRadioDiv > div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.shipRadioDiv > div > div > p:first-child {
+  font-size: large;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.shipRadioDiv > div > div > p:last-child {
+  font-size: medium;
+  font-weight: 300;
+  text-transform: capitalize;
+}
+
+.shipRadioDiv input {
+  width: 20px;
+  height: 20px;
+}
+
+.shipRadioDiv > div:hover,
+.shipRadioDiv input[type="radio"]:checked {
+  background-color: var(--lightGreen);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cartSubtotalComplete {
+  border-top: 1px solid var(--grey);
+}
+
+@media (max-width: 768px) {
+  .ship {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .ship {
+    padding: 10px 20px;
+  }
+  .shipBtnNext,
+  .shipBtnBack {
+    padding: 5px 40px !important;
+  }
+  .shipProductInfo > p:first-child {
+    font-size: medium;
+  }
+
+  .shipProductInfo > p:last-child {
+    font-size: small;
+  }
+}

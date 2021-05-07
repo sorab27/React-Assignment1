@@ -1,0 +1,112 @@
+:root {
+  --lightgrey: lightgrey;
+  --green: green;
+  --white: white;
+}
+
+.successHead {
+  background-color: var(--lightgrey);
+  padding: 40px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.successHead > h1 {
+  text-transform: capitalize;
+  text-align: center;
+  font-weight: 400;
+}
+
+.successHead > h1 > svg {
+  font-size: xx-large !important;
+  color: var(--green);
+  animation-name: tick;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes tick {
+  to {
+    transform: scale(1.7);
+  }
+}
+
+.successHead > p {
+  font-weight: 300;
+}
+
+.successHead > a > button {
+  background-color: var(--green);
+  color: var(--white);
+  text-transform: capitalize;
+  padding: 10px 40px;
+}
+
+.successTable {
+  padding: 30px 50px;
+}
+
+.successImg {
+  width: 100%;
+}
+
+.table {
+  width: 100%;
+  text-align: center;
+}
+
+.table th,
+.table td {
+  width: 10%;
+}
+
+.successGrandTotal {
+  text-align: end;
+  text-transform: uppercase;
+  font-style: italic;
+  margin: auto;
+  text-decoration: overline underline;
+}
+
+.successGrandTotal h5 {
+  font-weight: 400;
+}
+
+@media (max-width: 768px) {
+  .successTable {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 500px) {
+  .successTable {
+    padding: 10px;
+  }
+  .successImg {
+    width: 100% !important;
+  }
+  .successTable > h3 {
+    font-size: x-large;
+  }
+  .successHead > h1 {
+    font-size: large;
+  }
+  .successHead > p {
+    font-size: small;
+    text-align: center;
+  }
+  .successHead > h1 > svg {
+    font-size: large !important;
+  }
+  .successHead > a > button {
+    padding: 10px 20px;
+    font-size: x-small;
+  }
+  .successGrandTotal h5 {
+    font-size: medium;
+  }
+}

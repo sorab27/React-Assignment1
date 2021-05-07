@@ -1,0 +1,28 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.error > div > svg {
+  font-size: 100px;
+}
+
+.error > div > p {
+  text-transform: uppercase;
+  font-size: 50px;
+  font-weight: 300;
+}
+
+@media (max-width: 768px) {
+  .error > div > svg {
+    font-size: 60px !important;
+  }
+
+  .error > div > p {
+    font-size: 30px;
+  }
+}

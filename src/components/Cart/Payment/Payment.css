@@ -1,0 +1,129 @@
+:root {
+  --lightGreen: lightgreen;
+  --grey: lightgrey;
+  --yellow: yellow;
+  --maroon: maroon;
+  --white: white;
+}
+
+.pay {
+  padding: 30px 50px;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.pay h3 {
+  text-transform: capitalize;
+  font-weight: 400;
+}
+
+.payRadioDiv {
+  border-top: 1px solid var(--grey);
+  padding-top: 15px;
+  width: 100%;
+}
+
+.payRadioDiv > div {
+  display: flex;
+  justify-content: flex-start;
+  border: 2px solid var(--lightGreen);
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.payRadioDiv > div > div > p:first-child {
+  font-size: large;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+
+.payRadioDiv > div > div > p:nth-child(2) {
+  font-size: medium;
+  font-weight: 300;
+  text-transform: capitalize;
+  margin-left: 20px;
+}
+
+.payRadioDiv > div > div > input {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.payRadioDiv > div:hover,
+.payRadioDiv > div > div > input[type="radio"]:checked {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.payCredit {
+  display: flex;
+}
+
+.payCreditForm input {
+  outline: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.input-group-text {
+  background-color: white !important;
+  border-left: none;
+}
+
+.cardNumber {
+  border-right: none !important;
+  width: 30% !important;
+}
+
+.payPaypal {
+  display: flex;
+  justify-content: center;
+}
+
+.payPaypal svg {
+  font-size: 50px;
+}
+
+.payBtn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--grey);
+  padding-top: 15px;
+}
+
+.payBtnNext {
+  background-color: var(--yellow) !important;
+  padding: 5px 80px !important;
+  border-radius: 5px;
+}
+
+.payBtnBack {
+  background-color: var(--maroon) !important;
+  color: var(--white) !important;
+  padding: 5px 80px !important;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .pay {
+    padding: 20px;
+  }
+  .payBtnNext,
+  .payBtnBack {
+    padding: 5px 40px !important;
+  }
+}

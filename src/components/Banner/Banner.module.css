@@ -1,0 +1,98 @@
+:root {
+  --blue: #2874f0;
+  --white: white;
+  --black: #333;
+}
+
+.Banner {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 80px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Banner > h1 {
+  font-size: 60px;
+  font-weight: 300;
+  padding: 20px;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--white);
+}
+
+.Search {
+  display: flex;
+  margin-top: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.Input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid var(--white);
+  color: var(--black);
+  background-color: var(--white);
+  padding: 5px 10px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.Input > input {
+  outline: none;
+  width: 100%;
+  border: none;
+  margin-left: 8px;
+  font-size: large;
+}
+
+.Submit {
+  border: 1px solid var(--white);
+  margin-left: 20px;
+  padding: 5px 25px;
+  font-size: larger;
+  border-radius: 5px;
+  color: var(--blue);
+  background-color: var(--white);
+}
+
+.Submit:hover {
+  background-color: var(--blue);
+  transition: 0.2s;
+  color: var(--white);
+}
+
+@media (max-width: 768px) {
+  .Banner {
+    padding: 40px 50px;
+  }
+
+  .Banner > h1 {
+    font-size: 40px;
+  }
+
+  .Submit {
+    padding: 5px 20px;
+    font-size: large;
+  }
+}
+
+@media (max-width: 500px) {
+  .Banner {
+    padding: 20px 30px;
+  }
+
+  .Banner > h1 {
+    font-size: 20px;
+  }
+  .Search {
+    flex-direction: column;
+  }
+  .Submit {
+    margin-top: 20px;
+  }
+}

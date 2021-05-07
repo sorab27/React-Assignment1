@@ -1,0 +1,46 @@
+:root {
+  --blue: #2874f0;
+  --white: white;
+}
+
+.Footer {
+  background-color: #172337;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--white);
+  align-items: center;
+  text-align: center;
+  padding: 30px 50px;
+  width: 100%;
+}
+
+.Footer h2 {
+  margin-bottom: 0;
+  color: aliceblue;
+  line-height: normal;
+}
+
+.Footer ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.Footer a {
+  color: var(--white);
+}
+
+.Footer a:hover {
+  text-decoration: none;
+  color: var(--white);
+}
+
+@media (max-width: 500px) {
+  .Footer a {
+    font-size: small;
+  }
+  .Footer .Copy {
+    font-size: small;
+  }
+}

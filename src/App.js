@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import Details from "./components/Details/Details";
+import { Route, Switch } from "react-router";
+import Footer from "./components/Footer/Footer";
+import NavigationBar from "./components/Navbar/NavigationBar";
+import Products from "./components/ProductList/Products";
+import Cart from "./components/Cart/Cart";
+import Shipping from "./components/Cart/Shipping/Shipping";
+import Payment from "./components/Cart/Payment/Payment";
+import Success from "./components/Cart/Success/Success";
+import Error from "./components/Cart/Error/Error";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <NavigationBar />
+      <Switch>
+        <Route path="/" component={Products} exact />
+        <Route path="/details" component={Details} exact />
+        <Route path="/cart" component={Cart} exact />
+        <Route path="/ship" component={Shipping} exact />
+        <Route path="/payment" component={Payment} exact />
+        <Route path="/success" component={Success} exact />
+        <Route path="/error" component={Error} exact />
+        <Route component={Error} />
+      </Switch>
+      <Footer />
     </div>
   );
 }

@@ -1,0 +1,66 @@
+:root {
+  --blue: #2874f0;
+  --white: white;
+}
+
+.Navbar {
+  display: flex;
+  padding: 10px 50px;
+  width: 100%;
+  background-color: var(--blue);
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--white);
+}
+
+.navLinks a {
+  list-style: none;
+  text-decoration: none;
+  margin: auto 20px auto auto;
+  color: var(--white);
+}
+
+.navLinks a:hover {
+  text-decoration: underline;
+  color: var(--white);
+}
+
+.Button {
+  background-color: var(--white) !important;
+  border-radius: 5px;
+  color: var(--blue) !important;
+  border: 1px solid var(--white);
+  padding: 5px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Button:hover {
+  background-color: var(--blue) !important;
+  border: 1px solid var(--white) !important;
+  cursor: pointer;
+  color: var(--white) !important;
+  transition: 0.2s;
+}
+
+.Button > span {
+  margin-left: 8px;
+}
+
+@media (max-width: 768px) {
+  .Navbar {
+    font-size: small;
+    padding: 20px 30px;
+    justify-content: flex-start;
+  }
+
+  .Button {
+    padding: 3px 12px;
+  }
+
+  .navLinks a {
+    margin: 0;
+    line-height: 2rem;
+  }
+}
